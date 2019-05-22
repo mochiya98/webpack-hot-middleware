@@ -47,6 +47,7 @@ function setOverrides(overrides) {
   if (overrides.timeout) options.timeout = overrides.timeout;
   if (overrides.overlay) options.overlay = overrides.overlay !== 'false';
   if (overrides.reload) options.reload = overrides.reload !== 'false';
+  if (overrides.log) options.log = overrides.log !== 'false';
   if (overrides.noInfo && overrides.noInfo !== 'false') {
     options.log = false;
   }
